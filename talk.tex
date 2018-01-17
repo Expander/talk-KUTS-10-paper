@@ -105,6 +105,7 @@
 \newcommand{\Himalaya}{\texttt{Himalaya}\xspace}
 \newcommand{\FH}{\texttt{FeynHiggs}\xspace}
 \newcommand{\SPheno}{\texttt{SPheno}\xspace}
+\newcommand{\SARAH}{\texttt{SARAH}\xspace}
 \newcommand{\Zv}{\ensuremath{\backslash\mkern-11.0mu{Z_3}}}
 \newcommand{\downrightknickarrow}{\mathrel{\scalebox{1.3}{\rotatebox[origin=c]{180}{$\Lsh$}}}}
 \newcommand{\threelinebrace}{$\left. \begin{array}{c} \\ \\ \\ \end{array} \right\rbrace$}
@@ -242,10 +243,70 @@
 \end{frame}
 
 \section{Motivation}
+
+\begin{frame}{1 Motivation}
+  \begin{center}
+    \begin{tabular}{lll}
+      \toprule
+      approach    & $\MS \lesssim 1$--$2\eh{TeV}$ & $\MS \gtrsim 1$--$2\eh{TeV}$ \\
+      \midrule
+      fixed order & \ok & \notok \\
+      EFT         & \notok & \ok \\
+      hybrid      & \ok & \ok \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+  \begin{center}
+    [TODO: Henning's motivation image here!]
+  \end{center}
+\end{frame}
+
 \section{Methods}
+
+\begin{frame}{2 Methods}
+  \begin{itemize}
+  \item \FH: \mycite{1312.4937}
+    \begin{align*}
+      M_h^2 = (M_h^2)_{\text{fixed-order}} - (M_h^2)_{\text{logs}} + (M_h^2)_{\text{resummed logs}}
+    \end{align*}\\[-0.5em]
+    \begin{itemize}
+    \item[\ok] Pro: 2L accuracy available
+    \item[\notok] Contra: currently only MSSM
+    \end{itemize}
+  \item \feft and \SARAH/\SPheno: \mycite{1609.00371, 1703.03267, 1710.03760}
+    \begin{align*}
+      (M_h^2)_{\SM} &\overset{!}{=} (M_h^2)_{\MSSM} \qquad \text{at } Q = \MS \\
+      \Rightarrow\quad \lambda(\MS) &= \frac{1}{v^2} \left[ (M_h^2)_{\MSSM} - (\Delta m_h^2)_{\SM} \right]
+    \end{align*}\\[-0.5em]
+    \begin{itemize}
+    \item[\ok] Pro: not restricted to MSSM
+    \item[\notok] Contra: tricky to extend to 2L level
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
 \section{Status}
+
+\begin{frame}{3 Status}
+  
+\end{frame}
+
 \section{Advances during KUTS}
+
+\begin{frame}{4 Advances during KUTS}
+  
+\end{frame}
+
 \section{Theoretical uncertainties}
+
+\begin{frame}{5 Theoretical uncertainties}
+  
+\end{frame}
+
 \section{Prospects}
+
+\begin{frame}{6 Prospects}
+  
+\end{frame}
 
 \end{document}
