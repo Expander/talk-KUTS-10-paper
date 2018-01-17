@@ -116,6 +116,7 @@
 \newcommand{\ab}{\alpha_b}
 \newcommand{\atau}{\alpha_\tau}
 \newcommand{\as}{\alpha_s}
+\newcommand{\avnote}[1]{\textcolor{blue}{[#1]}}
 
 % set look of slides
 \usetheme{Madrid}
@@ -288,25 +289,74 @@
 \section{Status}
 
 \begin{frame}{3 Status}
-  
+  Currently available corrections:\\[1em]
+  \begin{itemize}
+  \item \FH
+    \begin{itemize}
+    \item Fixed-order: full LO + NLO, $O(\as\at,\as\ab,(\at + \ab)^2)$
+    \item EFT: full LL + NLL, $O(\as,\at)$ NNLL; EWino threshold
+    \end{itemize}
+  \item \feft
+    \begin{itemize}
+    \item Fixed-order: full LO + NLO
+    \item EFT: full LL + NLL
+    \end{itemize}
+  \item \SARAH/\SPheno
+    \begin{itemize}
+    \item Fixed-order: full LO + NLO, $O(\as \at, \as \ab, (\at + \ab)^2)$
+      \\\avnote{to be checked}
+    \item EFT: full LL \avnote{+ NLL?}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \section{Advances during KUTS}
 
 \begin{frame}{4 Advances during KUTS}
-  
+  \begin{itemize}
+  \item \FH:
+    \begin{itemize}
+    \item EWino thresholds
+    \item \avnote{more?}
+  \end{itemize}
+  \item \feft:
+    \begin{itemize}
+    \item implementation of hybrid method \mycite{1609.00371}
+    \item improved to NLL accuracy \mycite{1710.03760}
+  \end{itemize}
+  \item \SARAH/\SPheno:
+    \begin{itemize}
+    \item implementation of hybrid method \mycite{1703.03267}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \section{Theoretical uncertainties}
 
 \begin{frame}{5 Theoretical uncertainties}
-  
+  \begin{itemize}
+  \item Uncertainty of EFT calculation
+  \item Uncertainty of fixed-order calculation
+  \item Uncertainty of hybrid calculation
+  \item Combined uncertainty expected to be smaller than uncertainty of pure EFT or pure fixed-order calculations
+  \end{itemize}
 \end{frame}
 
+\begin{frame}{5 Theoretical uncertainties}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{plots/kuts//Mh_MS_TB-5_Xt-0}
+    \includegraphics[width=0.35\textwidth]{plots/kuts//Mh_MS_TB-5_Xt--2}\\
+    \includegraphics[width=0.35\textwidth]{plots/kuts//DMh_MS_TB-5_Xt-0}
+    \includegraphics[width=0.35\textwidth]{plots/kuts//DMh_MS_TB-5_Xt--2}
+  \end{center}
+\end{frame}
 \section{Prospects}
 
 \begin{frame}{6 Prospects}
-  
+  \begin{itemize}
+  \item Improvement on theoretical uncertainties
+  \item Further low-energy models (not only SM as EFT)
+  \end{itemize}
 \end{frame}
 
 \end{document}
