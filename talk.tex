@@ -273,7 +273,7 @@
       M_h^2 = (M_h^2)_{\text{fixed-order}} - (M_h^2)_{\text{logs}} + (M_h^2)_{\text{resummed logs}}
     \end{align*}\\[-0.5em]
     \begin{itemize}
-    \item[\ok] Pro: 2L accuracy available
+    \item[\ok] Pro: 2L accuracy available, complex parameters
     \item[\notok] Contra: currently only MSSM
     \end{itemize}
   \item \feft and \SARAH/\SPheno: \mycite{1609.00371, 1703.03267, 1710.03760}
@@ -295,8 +295,8 @@
   \begin{itemize}
   \item \FH
     \begin{itemize}
-    \item Fixed-order: full LO + NLO, $O(\as\at,\as\ab,(\at + \ab)^2)$
-    \item EFT: full LL + NLL, $O(\as,\at)$ NNLL; EWino threshold
+    \item Fixed-order: full LO + NLO + $O(\as\at,\as\ab,(\at + \ab)^2)$
+    \item EFT: full LL + NLL + NNLL $O(\as,\at)$; gaugino threshold
     \end{itemize}
   \item \feft
     \begin{itemize}
@@ -305,7 +305,7 @@
     \end{itemize}
   \item \SARAH/\SPheno
     \begin{itemize}
-    \item Fixed-order: full LO + NLO, $O(\as \at, \as \ab, (\at + \ab)^2)$
+    \item Fixed-order: full LO + NLO + $O(\as \at, \as \ab, (\at + \ab)^2)$
       \\\avnote{to be checked}
     \item EFT: full LL \avnote{+ NLL?}
     \end{itemize}
@@ -320,7 +320,7 @@
     \begin{itemize}
     \item EW contributions, gaugino thresholds, NNLL resummation \mycite{1608.01880}
     \item investigation of large differences to other codes \mycite{1706.00346}
-    \item \avnote{more?}
+    \item refinement of hybrid method \mycite{1706.00346}
   \end{itemize}
   \item \feft:
     \begin{itemize}
@@ -347,11 +347,9 @@
   \emph{Expectations:}
   \begin{itemize}
   \item fixed-order uncertainty increases with $\MS$
-  \item EFT uncertainty decreases with $\MS$
   \item EFT calculation more precise than fixed-order for
     $\MS \gtrsim 1$--$2\eh{TeV}$
   \item hybrid uncertainty is smaller or similar to EFT / fixed-order
-  \item hybrid uncertainty is nearly constant for all $\MS$
   \end{itemize}
 \end{frame}
 
