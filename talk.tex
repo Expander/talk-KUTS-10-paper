@@ -348,6 +348,8 @@
 
 \newcommand{\al}{\alpha}
 \begin{frame}{4.3 Status}
+  Status of all spectrum generators described in detail.
+  Summary table:
   \begin{table}
     \def\arraystretch{1.3}
     \centering
@@ -400,12 +402,40 @@
 \section{Prospects}
 
 \begin{frame}{4.5 Prospects}
-  \begin{itemize}
-  \item Advance \feft to NNLO + NNLL
-  \item Improvement on theoretical uncertainties
-  \item Further low-energy models (not only SM as EFT)
-  \item Further high-energy models (not only MSSM as UV theory)
-  \end{itemize}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{{{plots/kuts-9/4.5}}}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item Advance \feft to NNLO + NNLL
+      \item Improvement on theoretical uncertainties
+      \item Further low-energy models (not only SM as EFT)
+      \item Further high-energy models (not only MSSM as UV theory)
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{4.5.1 Prospects -- non-SM EFTs}
+  Effective 2HDM in \FH with\\
+  $\MS = 100\TeV$, $M_i = 500\GeV$, $X_t = 1.8\MS$, $t_\beta = 2$
+  \begin{center}
+    \includegraphics[width=0.49\textwidth]{{{plots/kuts-9/FH}}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{4.5.2 Prospects -- non-MSSM UV models}
+  NMSSM as UV model with\\
+  $m_{Q_3} = 2\MS$, $m_A = \MS/2$, $X_t = -\sqrt{6}\MS$, $t_\beta = 20$
+  \begin{center}
+    \begin{tabular}{cc}
+      \includegraphics[width=0.49\textwidth]{{{plots/kuts-9/FS_TB-20_Xt--sqrt6}}} &
+      \includegraphics[width=0.49\textwidth]{{{plots/kuts-9/SP_TB-20_Xt--sqrt6}}} \\
+      \fs & \SARAH/\SPheno
+    \end{tabular}
+  \end{center}
 \end{frame}
 
 \end{document}
