@@ -346,31 +346,36 @@
 
 \section{Status}
 
-\begin{frame}{3 Status}
-  Currently available corrections:\\[1em]
-  \begin{itemize}
-  \item \FH
-    \begin{itemize}
-    \item Fixed-order: full LO + NLO + $O(\as\at,\as\ab,(\at + \ab)^2)$
-    \item EFT: full LL + NLL + NNLL $O(\as,\at)$; gaugino threshold
-    \end{itemize}
-  \item \feft
-    \begin{itemize}
-    \item Fixed-order: full LO + NLO
-    \item EFT: full LL + NLL
-    \end{itemize}
-  \item \SARAH/\SPheno
-    \begin{itemize}
-    \item Fixed-order: full LO + NLO + $O(\as \at, \as \ab, (\at + \ab)^2)$
-      \\\avnote{to be checked}
-    \item EFT: full LL \avnote{+ NLL?}
-    \end{itemize}
-  \end{itemize}
+\newcommand{\al}{\alpha}
+\begin{frame}{4.3 Status}
+  \begin{table}
+    \def\arraystretch{1.3}
+    \centering
+    \scalebox{0.75}{
+    \begin{tabular}{llll}
+      \toprule
+      & fixed-order                 & \multirow{2}{*}{resummation order} & \multirow{2}{*}{low-energy EFTs}\\
+      & (incl. $O(v^2/\MS^2)$)      &                                    &                                 \\
+      \midrule
+      \FH     & LO+NLO+NNLO$^*$     & LL+NLL+NNLL$^\dagger$               & SM (+ $\chi^{0,\pm}$, $\tilde{g}$),        \\
+      &                             &                                    & THDM (+ $\chi^{0,\pm}$, $\tilde{g}$)$^{**}$ \\
+      \fs     & LO+NLO              & LL+NLL                             & SM                              \\
+      \SARAH/\SPheno & LO+NLO+NNLO$^\ddagger$ & LL                                & SM                              \\
+      \bottomrule
+    \end{tabular}}
+  \end{table}
+  $^*$Only contributions of
+  $O(\al_s (\al_t + \al_b) + (\al_t + \al_b)^2)$\\
+  $^\dagger$Only contributions of $O(\al_s,\al_t)$\\
+  $^\ddagger$Only contributions of
+  $O(\al_s (\al_t + \al_b) + (\al_t + \al_b)^2 + \al_\tau\al_b +
+  \al_\tau^2)$\\
+  $^{**}$Not yet publicly available
 \end{frame}
 
 \section{Advances during KUTS}
 
-\begin{frame}{4 Advances during KUTS}
+\begin{frame}{4.4 Advances during KUTS}
   \begin{itemize}
   \item \FH:
     \begin{itemize}
@@ -390,37 +395,9 @@
   \end{itemize}
 \end{frame}
 
-\section{Theoretical uncertainties}
-
-\begin{frame}{5 Theoretical uncertainties}
-  Give prescription and estimate of uncertainties of:
-  \begin{itemize}
-  \item fixed-order calculation
-  \item EFT calculation
-  \item hybrid calculation
-  \end{itemize}
-  \vspace{1em}
-  \emph{Expectations:}
-  \begin{itemize}
-  \item fixed-order uncertainty increases with $\MS$
-  \item EFT calculation more precise than fixed-order for
-    $\MS \gtrsim 1$--$2\eh{TeV}$
-  \item hybrid uncertainty is smaller or similar to EFT / fixed-order
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{5 Theoretical uncertainties}
-  \begin{center}
-    \includegraphics[width=0.35\textwidth]{plots/kuts//Mh_MS_TB-5_Xt-0}
-    \includegraphics[width=0.35\textwidth]{plots/kuts//Mh_MS_TB-5_Xt--2}\\
-    \includegraphics[width=0.35\textwidth]{plots/kuts//DMh_MS_TB-5_Xt-0}
-    \includegraphics[width=0.35\textwidth]{plots/kuts//DMh_MS_TB-5_Xt--2}
-  \end{center}
-\end{frame}
-
 \section{Prospects}
 
-\begin{frame}{6 Prospects}
+\begin{frame}{4.5 Prospects}
   \begin{itemize}
   \item Advance \feft to NNLO + NNLL
   \item Improvement on theoretical uncertainties
