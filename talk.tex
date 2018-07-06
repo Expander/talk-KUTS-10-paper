@@ -294,26 +294,54 @@
 
 \section{Methods}
 
-\begin{frame}{2 Methods}
-  \begin{itemize}
-  \item \FH: \mycite{1312.4937, 1608.01880, 1706.00346}
-    \begin{align*}
-      M_h^2 = (M_h^2)_{\text{fixed-order}} - (M_h^2)_{\text{logs}} + (M_h^2)_{\text{resummed logs}}
-    \end{align*}\\[-0.5em]
-    \begin{itemize}
-    \item[\ok] Pro: 2L accuracy available, complex parameters
-    \item[\notok] Contra: currently only MSSM
-    \end{itemize}
-  \item \feft and \SARAH/\SPheno: \mycite{1609.00371, 1703.03267, 1710.03760}
-    \begin{align*}
-      (M_h^2)_{\SM} &\overset{!}{=} (M_h^2)_{\MSSM} \qquad \text{at } Q = \MS \\
-      \Rightarrow\quad \lambda(\MS) &= \frac{1}{v^2} \left[ (M_h^2)_{\MSSM} - (\Delta m_h^2)_{\SM} \right]
-    \end{align*}\\[-0.5em]
-    \begin{itemize}
-    \item[\ok] Pro: not restricted to MSSM
-    \item[\notok] Contra: tricky to extend to NNLO + NNLL level
-    \end{itemize}
-  \end{itemize}
+\begin{frame}{4.2 Methods}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{{{plots/kuts-9/4.2}}}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \FH:
+      \begin{align*}
+        M_h^2 = (M_h^2)_{\text{FO}} - (M_h^2)_{\text{logs}} + (M_h^2)_{\text{res}}
+      \end{align*}
+      Notes:
+      \begin{itemize}
+      \item \DRbar\ $\leftrightarrow$ OS conversion
+      \item $p^2$ iteration
+      \end{itemize}
+      Pros/Cons:
+      \begin{itemize}
+      \item[\ok] 2L accuracy
+      \item[\ok] CPV
+      \item[\notok] restricted to MSSM
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{4.2 Methods}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{{{plots/kuts-9/4.2.2}}}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \fs (\feft) and \SARAH/\SPheno:
+      \begin{align*}
+        (M_h^2)_{\SM} &\overset{!}{=} (M_h^2)_{\MSSM} \text{ at } Q = \MS
+      \end{align*}
+      Notes:
+      \begin{itemize}
+      \item care must be taken to avoid large higher order logs
+      \end{itemize}
+      Pros/Cons:
+      \begin{itemize}
+      \item[\ok] not restricted to MSSM
+      \item[\notok] extension to 2L tricky (work in progress)
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Status}
