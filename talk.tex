@@ -61,6 +61,8 @@
 \newcommand{\xmark}{\ding{55}}%
 \newcommand{\fmfvcenter}[1]{\;\vcenter{\hbox{\fmfreuse{#1}}}\;}
 \newcommand{\eh}[1]{\,\mathsf{#1}}
+\newcommand{\GeV}{\eh{GeV}}
+\newcommand{\TeV}{\eh{TeV}}
 \newcommand{\ok}{\textcolor{darkgreen}{\cmark}}
 \newcommand{\notok}{\textcolor{red}{\xmark}}
 \newcommand{\maybe}{\textcolor{gray}{\cmark}}
@@ -245,23 +247,49 @@
 
 \section{Motivation}
 
-\begin{frame}{1 Motivation}
-  \begin{center}
-    \begin{tabular}{lll}
-      \toprule
-      approach    & $\MS \lesssim 1$--$2\eh{TeV}$ & $\MS \gtrsim 1$--$2\eh{TeV}$ \\
-      \midrule
-      fixed order & \ok & \notok \\
-      EFT         & \notok & \ok \\
-      hybrid      & \ok & \ok \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-  To illustrate position of ``intermediate region'', show:
-  \begin{center}
-    \includegraphics[width=0.49\textwidth]{plots/kuts/FH_hybrid}\hfill
-    \includegraphics[width=0.4\textwidth]{plots/kuts/Mh_3L_MS_TB-5_Xt-2}
-  \end{center}
+\begin{frame}{4.1 Motivation}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{{{plots/kuts-9/4.1}}}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      Statements:
+      \begin{itemize}
+      \item In the currently interesting region $\MS = 0.5$--$1\TeV$ it is
+        not clear whether a FO or EFT calculation is more accurate \\
+        $\Rightarrow$ use hybrid calculation in that region
+      \item Hybrid calculation allows study of suppressed terms \\
+        $\Rightarrow$ can conclude when EFT is appropriate
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{4.1 Motivation}
+  Illustration in \FH and \fs:
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{center}
+        \includegraphics[width=0.49\textwidth]{plots/kuts-9/FH_1}
+        \includegraphics[width=0.49\textwidth]{plots/kuts-9/FS_3L}\\
+        \includegraphics[width=0.49\textwidth]{plots/kuts-9/FH_2}
+        \includegraphics[width=0.49\textwidth]{plots/kuts-9/FS_3L_2}
+      \end{center}
+    \end{column}
+    %
+    \begin{column}{0.4\textwidth}
+      Top row: $m_A = \MS/8, t_\beta = 8$\\[1em]
+      Bottom row: $m_A = \MS, t_\beta = 20$\\[1em]
+      Statements:
+      \begin{itemize}
+      \item Low $m_A$: hybrid interpolates between $1$--$2\TeV$.
+        \texttt{FS+H} better captures logarithmic behaviour of EFT
+      \item High $m_A$: suppressed terms are negligible for
+        $\MS \gtrsim 700\GeV, 400\GeV$
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Methods}
